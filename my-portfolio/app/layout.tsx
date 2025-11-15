@@ -2,7 +2,21 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LiquidEther from "../components/LiquidEther";
+import Link from "next/link";
+import StaggeredMenu from '../components/StaggeredMenu';
 
+const menuItems = [
+  { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+  { label: 'Services', ariaLabel: 'View our services', link: '/services' },
+  { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
+];
+
+const socialItems = [
+  { label: 'Twitter', link: 'https://twitter.com' },
+  { label: 'GitHub', link: 'https://github.com' },
+  { label: 'LinkedIn', link: 'https://linkedin.com' }
+];
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +40,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+    <body>
+    <div style={{height: '100vh', width: '0vh', background: '#1a1a1a'}} className={"fixed inset-0 -z-0 bg-black"}>
+      <StaggeredMenu
+          position="right"
+          items={menuItems}
+          socialItems={socialItems}
+          displaySocials={true}
+          displayItemNumbering={true}
+          menuButtonColor="#fff"
+          openMenuButtonColor="#000"
+          changeMenuColorOnOpen={true}
+          colors={['#B19EEF', '#5227FF']}
+          isFixed={true}
+          accentColor="#ff6b6b"
+      />
+    </div>
+
+    <div className="fixed inset-0 -z-10 bg-black">
       <LiquidEther
           colors={['#5227FF', '#FF9FFC', '#B19EEF']}
           mouseForce={20}
@@ -44,8 +75,11 @@ export default function RootLayout({
           autoResumeDelay={3000}
           autoRampDuration={0.6}
       />
-        {children}
-      </body>
+    </div>
+    {children}
+
+    </body>
+
     </html>
   );
 }
