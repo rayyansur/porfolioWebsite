@@ -7,15 +7,12 @@ import StaggeredMenu from '../components/StaggeredMenu';
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
-  { label: 'Services', ariaLabel: 'View our services', link: '/services' },
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
 ];
 
 const socialItems = [
-  { label: 'Twitter', link: 'https://twitter.com' },
-  { label: 'GitHub', link: 'https://github.com' },
-  { label: 'LinkedIn', link: 'https://linkedin.com' }
+  { label: 'GitHub', link: 'https://github.com/rayyansur' },
+  { label: 'LinkedIn', link: 'https://linkedin.com/in/rayyan-surani' }
 ];
 
 const geistSans = Geist({
@@ -41,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body>
-    <div style={{height: '100vh', width: '0vh', background: '#1a1a1a'}} className={"fixed inset-0 -z-0 bg-black"}>
+    <div style={{height: '100vh', width: '0vh', background: '#1a1a1a'}} className={"fixed inset-0 z-1 bg-black"}>
       <StaggeredMenu
           position="right"
           items={menuItems}
@@ -54,26 +51,6 @@ export default function RootLayout({
           colors={['#B19EEF', '#5227FF']}
           isFixed={true}
           accentColor="#ff6b6b"
-      />
-    </div>
-
-    <div className="fixed inset-0 -z-10 bg-black">
-      <LiquidEther
-          colors={['#5227FF', '#FF9FFC', '#B19EEF']}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous={false}
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
-          autoDemo={true}
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
       />
     </div>
     {children}
