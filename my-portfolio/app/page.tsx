@@ -5,7 +5,7 @@ import ChromaGrid from "@/components/ChromaGrid";
 
 const items = [
     {
-        image: "~/img.png",
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/img.png?raw=true",
         title: "Knowledge Recogntion Location AI",
         handle: "AI app to help visually impaired people find objects and detect collisions using computer vision.",
         borderColor: "#6C42F5",
