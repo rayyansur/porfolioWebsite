@@ -1,17 +1,56 @@
+import ChromaGrid from "@/components/ChromaGrid";
+
+const items = [
+    {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/KLRai.png?raw=true",
+        title: "Knowledge Recogntion Location AI",
+        handle: "AI app to help visually impaired people find objects using voice commands and detect collisions using computer vision.",
+        borderColor: "#6C42F5",
+        gradient: "linear-gradient(145deg, #0f4396, #222)",
+        url: "https://github.com/rayyansur/KLR.ai",
+        subtitle: ""
+    },
+    {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/ASL-to-Speech.png?raw=true",
+        title: "ASL-to-Speech",
+        handle: "Pattern recognition model using computer vision for sign language to speech to aid in real time conversations.",
+        borderColor: "#6C42F5",
+        gradient: "linear-gradient(180deg, #6CF5F5, #222)",
+        url: "https://github.com/rayyansur/ASL-to-Speech",
+        subtitle: ""
+    },
+    {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/Discord.png?raw=true",
+        title: "BeesBot",
+        handle: "Discord bot made to integrate text commands like coinflipping and card games.",
+        borderColor: "#6C42F5",
+        gradient: "linear-gradient(180deg, #6C42F5, #222)",
+        url: "https://github.com/rayyansur/BeesBot",
+        subtitle: ""
+    },
+    {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/HCR.png?raw=true",
+        title: "Handwritten Character Recognizer",
+        handle: "Computer vision that utilizes google's mediapipe model and a model trained on the EMNIST dataset to help draw and recognize characters from a webcam.",
+        borderColor: "#6C42F5",
+        gradient: "linear-gradient(180deg, #6C42F5, #222)",
+        url: "https://github.com/rayyansur/Handwritten-Digit-Recognizer",
+        subtitle: ""
+    }
+];
+
+
+
 export default function Projects() {
     return (
-        <section className="w-full max-w-3xl py-16">
-            <h2 className="text-3xl font-semibold mb-6">Projects</h2>
-            <div className="grid gap-6">
-                <div className="p-6 rounded-2xl bg-neutral-900 shadow-md">
-                    <h3 className="text-xl font-semibold">ASL CNN</h3>
-                    <p className="opacity-70 text-sm">Deep learning model for sign language recognition.</p>
-                </div>
-                <div className="p-6 rounded-2xl bg-neutral-900 shadow-md">
-                    <h3 className="text-xl font-semibold">BiasLens</h3>
-                    <p className="opacity-70 text-sm">Chrome extension detecting political bias & sentiment.</p>
-                </div>
-            </div>
-        </section>
+        <div style={{height: '600px', width: "900px", position: 'relative'}}>
+            <ChromaGrid
+                items={items}
+                radius={300}
+                damping={0.45}
+                fadeOut={0.6}
+                ease="power3.out"
+            />
+        </div>
     );
 }

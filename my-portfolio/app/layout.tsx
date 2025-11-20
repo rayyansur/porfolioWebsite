@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import LiquidEther from "../components/LiquidEther";
-import Link from "next/link";
+
 import StaggeredMenu from '../components/StaggeredMenu';
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'Project', ariaLabel: 'Browse my projects', link: '/projects'},
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
 ];
 
@@ -14,16 +13,6 @@ const socialItems = [
   { label: 'GitHub', link: 'https://github.com/rayyansur' },
   { label: 'LinkedIn', link: 'https://linkedin.com/in/rayyan-surani' }
 ];
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body>
-    <div style={{height: '100vh', width: '0vh', background: '#1a1a1a'}} className={"fixed inset-0 z-1 bg-black"}>
+    <div style={{height: '100vh', width: '0vh', background: '#1a1a1a'}} className={"fixed inset-0 z-10 bg-black"}>
       <StaggeredMenu
           position="right"
           items={menuItems}
