@@ -2,6 +2,15 @@ import ChromaGrid from "@/components/ChromaGrid";
 
 const items = [
     {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/GT-Moviestore.png?raw=true",
+        title: "GT Movies Store",
+        handle: "A web store application with user login, search, purchase, and review functionalities.",
+        borderColor: "#D5C300",
+        gradient: "linear-gradient(180deg, #D5C300, #222)",
+        url: "/projects/GTMovie/",
+        subtitle: ""
+    },
+    {
         image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/KLRai.png?raw=true",
         title: "Knowledge Recogntion Location AI",
         handle: "AI app to help visually impaired people find objects using voice commands and detect collisions using computer vision.",
@@ -24,7 +33,7 @@ const items = [
         title: "BeesBot",
         handle: "Discord bot made to integrate text commands like coinflipping and card games.",
         borderColor: "#6C42F5",
-        gradient: "linear-gradient(180deg, #6C42F5, #222)",
+        gradient: "linear-gradient(180deg, #9C9CF5, #222)",
         url: "https://github.com/rayyansur/BeesBot",
         subtitle: ""
     },
@@ -43,7 +52,7 @@ const items = [
 
 export default function Projects() {
     return (
-        <div style={{height: '600px', width: "900px", position: 'relative'}}>
+        <div style={{height: 'fit-content', width: "1200px", position: 'relative', }}>
             <ChromaGrid
                 items={items}
                 radius={300}

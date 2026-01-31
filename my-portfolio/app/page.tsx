@@ -9,7 +9,7 @@ export default function Page() {
           <div className="absolute z-1 flex flex-col items-center w-full font-100">
               <AboutMe/>
           </div>
-          <div className="fixed inset-0 -z-10 bg-black">
+          <div className="fixed inset-0 -z-1 bg-black">
               <LiquidEther
                   colors={['#D79CBD', '#0f5cff', '#65dcfc']}
                   mouseForce={20}

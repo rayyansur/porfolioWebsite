@@ -137,9 +137,6 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     });
   };
 
-  const handleCardClick = (url?: string) => {
-    if (url) window.open(url, '_blank', 'noopener,noreferrer');
-  };
 
   const handleCardMove: React.MouseEventHandler<HTMLElement> = e => {
     const c = e.currentTarget as HTMLElement;
@@ -163,18 +160,16 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
           }
       >
         {data.map((c, i) => (
-            <article
+            <a
                 key={i}
+                href={c.url}
                 onMouseMove={handleCardMove}
-                onClick={() => handleCardClick(c.url)}
-                className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
-                style={
-                  {
-                    '--card-border': c.borderColor || 'transparent',
-                    background: c.gradient,
-                    '--spotlight-color': 'rgba(255,255,255,0.3)'
-                  } as React.CSSProperties
-                }
+                className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300"
+                style={{
+                  '--card-border': c.borderColor || 'transparent',
+                  background: c.gradient,
+                  '--spotlight-color': 'rgba(255,255,255,0.3)'
+                } as React.CSSProperties}
             >
               <div
                   className="absolute inset-0 pointer-events-none transition-opacity duration-500 z-20 opacity-0 group-hover:opacity-100"
@@ -192,7 +187,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
                 {c.location && <span className="text-[0.85rem] opacity-85 text-right">{c.location}</span>}
               </footer>
-            </article>
+            </a>
         ))}
         <div
             className="absolute inset-0 pointer-events-none z-30"

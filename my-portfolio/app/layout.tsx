@@ -37,9 +37,9 @@ export default function RootLayout({
           menuButtonColor="#fff"
           openMenuButtonColor="#000"
           changeMenuColorOnOpen={true}
-          colors={['#B19EEF', '#5227FF']}
+          colors={['#0f5cff', '#6554fc']}
           isFixed={true}
-          accentColor="#ff6b6b"
+          accentColor="#6554fc"
       />
     </div>
     {children}
