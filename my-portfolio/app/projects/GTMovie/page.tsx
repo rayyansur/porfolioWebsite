@@ -8,10 +8,10 @@ export default function Page() {
                 <h1 className="text-5xl font-bold mb-4 text-center"><br/>GT Movies Store</h1>
                 <b className={"opacity-80 font-bold text-center"}>
                     A web store application with user login, search, purchase, and review functionalities</b>
-                <div className={"grid grid-cols-2 gap-8"}>
                     <div className={"item"}>
                         <h2 className="text-2xl font-bold mb-4"><br/>Video Demo</h2>
-                        <ReactPlayer src={"https://youtu.be/U-xZgMPxK5s"} controls={true} height={"240px"} width={"400px"}></ReactPlayer>
+                        <ReactPlayer src={"https://youtu.be/U-xZgMPxK5s"} controls={true} height={"240px"}
+                                     width={"400px"}></ReactPlayer>
                     </div>
                     <div className={"item text-center"}>
                         <b className={"opacity-80 font-bold"}>
@@ -41,7 +41,6 @@ export default function Page() {
                             reviews,
                             with additional ability to edit movies, users and orders.<br/>
                         </b>
-                    </div>
 
 
                 </div>
@@ -49,18 +48,22 @@ export default function Page() {
                     <br/>
                     This webstore application was created for a University Project<br/>
                     I worked on this project to learn the basics of the Django framework and used textbook resources
-                    as a guide. This project utilized a Scrum (Agile) software development methodology. Most obstacles faced
-                    during development were from my lack of experience with Django and were dealt with by reading resources or
+                    as a guide. This project utilized a Scrum (Agile) software development methodology. Most obstacles
+                    faced
+                    during development were from my lack of experience with Django and were dealt with by reading
+                    resources or
                     Django documentation online.
-                    </b>
-                <a href={"https://rayyansur.pythonanywhere.com/"} className={"text-blue-600 underline text-2xl"}> Website Link </a>
-                <a href={"https://github.com/rayyansur/CS2340-Project-1"} className={"text-blue-600 underline text-2xl"}> Github Repo</a>
+                </b>
+                <a href={"https://rayyansur.pythonanywhere.com/"}
+                   className={"text-blue-600 underline text-2xl"}> Website Link </a>
+                <a href={"https://github.com/rayyansur/CS2340-Project-1"}
+                   className={"text-blue-600 underline text-2xl"}> Github Repo</a>
 
             </div>
-            <div style={{width: '100%', height: '100%', position: 'absolute'}}
-                 className={"inset-0 -z-10 bg-black"}>
+            <div className="fixed inset-0 -z-1 bg-black">
+
                 <PixelSnow
-                    color="#ffffff"
+                    color="#D5C300"
                     flakeSize={0.01}
                     minFlakeSize={1.25}
                     pixelResolution={200}

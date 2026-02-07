@@ -1,5 +1,4 @@
 // file: app/page.tsx
-import LiquidEther from "@/components/LiquidEther";
 import Project from "@/components/Projects"
 import PixelSnow from "@/components/PixelSnow";
 
@@ -9,9 +8,10 @@ export default function Page() {
         <main className="flex flex-col items-center min-h-screen text-white">
             <div className="absolute z-0 flex flex-col items-center w-full max-w-4xl mx-auto font-100">
                 <h1 className="text-5xl font-bold mb-4"><br/>My Projects<br/></h1>
+                <h4 className="mb-4 italic opacity-60">Click on a project to learn more</h4>
                 <Project/>
             </div>
-            <div className="fixed inset-0 -z-10 bg-black">
+            <div className="fixed inset-0 -z-1 bg-black">
                 <PixelSnow
                     color="#ffffff"
                     flakeSize={0.01}

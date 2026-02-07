@@ -2,10 +2,9 @@
 import AboutMe from "../components/AboutMe";
 import LiquidEther from "@/components/LiquidEther";
 
-
 export default function Page() {
   return (
-      <main className="flex flex-col items-center min-h-screen text-white">
+      <main className="flex flex-col items-center min-h-screen text-white font-">
           <div className="absolute z-1 flex flex-col items-center w-full font-100">
               <AboutMe/>
           </div>

@@ -13,10 +13,10 @@ const items = [
     {
         image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/KLRai.png?raw=true",
         title: "Knowledge Recogntion Location AI",
-        handle: "AI app to help visually impaired people find objects using voice commands and detect collisions using computer vision.",
-        borderColor: "#6C42F5",
+        handle: "A hackathon project to help visually impaired people find objects using voice commands and detect collisions using computer vision.",
+        borderColor: "#0f4396",
         gradient: "linear-gradient(145deg, #0f4396, #222)",
-        url: "https://github.com/rayyansur/KLR.ai",
+        url: "/projects/KLRai",
         subtitle: ""
     },
     {
@@ -52,7 +52,7 @@ const items = [
 
 export default function Projects() {
     return (
-        <div style={{height: 'fit-content', width: "1200px", position: 'relative', }}>
+        <div style={{height: 'fit-content', width: 'fit-screen', position: 'relative', }}>
             <ChromaGrid
                 items={items}
                 radius={300}
