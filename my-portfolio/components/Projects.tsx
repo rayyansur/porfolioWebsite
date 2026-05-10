@@ -2,6 +2,24 @@ import ChromaGrid from "@/components/ChromaGrid";
 
 const items = [
     {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/BiasLens.png?raw=true",
+        title: "BiasLens",
+        handle: "News Ingestion website that does Political Bias and Sentiment Analysis.",
+        borderColor: "#6C42F5",
+        gradient: "linear-gradient(180deg, #3DA1FF, #222)",
+        url: "https://github.com/rayyansur/BiasLens",
+        subtitle: ""
+    },
+    {
+        image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/ConnectAI.png?raw=true",
+        title: "ConnectAI",
+        handle: "AI Career Advisor Chatbot that uses an LLM and RAG Pipeline to ingest jobs, user resumes and other documents for job recommendations.",
+        borderColor: "#6C42F5",
+        gradient: "linear-gradient(180deg, #11DAFF, #222)",
+        url: "https://munoz3connectai.vercel.app/",
+        subtitle: ""
+    },
+    {
         image: "https://github.com/rayyansur/porfolioWebsite/blob/master/my-portfolio/app/assets/GT-Moviestore.png?raw=true",
         title: "GT Movies Store",
         handle: "A web store application with user login, search, purchase, and review functionalities.",

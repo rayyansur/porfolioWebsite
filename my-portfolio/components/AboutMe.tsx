@@ -3,7 +3,7 @@ import CurvedLoop from './CurvedLoop';
 
 export default function AboutMe() {
     return (
-        <section className="w-full py-24 inset-0 z-1">
+        <section className="w-full py-10 md:py-24 inset-0 z-1">
             <div >
                 <CurvedLoop
                     marqueeText= "Hello! My name is Rayyan!"
@@ -15,7 +15,7 @@ export default function AboutMe() {
                 />
             </div>
 
-            <p className="max-w-6xl mx-auto flex flex-col items-center opacity-80 bold text-5xl">
+            <p className="max-w-6xl mx-auto flex flex-col items-center opacity-80 bold text-xl sm:text-3xl lg:text-5xl px-4 sm:px-8">
                 I am a Junior Computer Science major at Georgia Tech<br/>
                 This website is my portfolio to showcase all my academic and personal projects.<br/>
                 Most of my projects consist of full-stack or back-end development done by me.<br/>
