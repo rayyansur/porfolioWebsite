@@ -18,7 +18,7 @@ export default function ContactPage() {
                     </div>
 
                     <p className="max-w-3xl mx-auto flex flex-col items-left text-6xl opacity-80 text-white">
-                        Email: rsurani6@gatech.edu<br/>
+                        Email: rayyan.surani@hotmail.com<br/>
                         Phone: (352) 895-2588 <br/>
                         <span>
                     Linkedin: <a href="https://www.linkedin.com/in/rayyan-surani"
