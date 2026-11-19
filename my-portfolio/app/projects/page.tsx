@@ -6,10 +6,12 @@ import PixelSnow from "@/components/PixelSnow";
 export default function Page() {
     return (
         <main className="flex flex-col items-center min-h-screen text-white">
-            <div className="absolute z-0 flex flex-col items-center w-full max-w-4xl mx-auto font-100">
+            <div className="absolute z-0 flex flex-col items-center w-full font-100">
                 <h1 className="text-5xl font-bold mb-4"><br/>My Projects<br/></h1>
                 <h4 className="mb-4 italic opacity-60">Click on a project to learn more</h4>
-                <Project/>
+                <div className="w-full max-w-[1600px] px-4 sm:px-8 pb-12">
+                    <Project/>
+                </div>
             </div>
             <div className="fixed inset-0 -z-1 bg-black">
                 <PixelSnow

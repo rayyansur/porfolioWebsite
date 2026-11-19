@@ -150,7 +150,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
           ref={rootRef}
           onPointerMove={handleMove}
           onPointerLeave={handleLeave}
-          className={`relative w-full h-full flex flex-wrap justify-center items-start gap-3 ${className}`}
+          className={`relative w-full h-full grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4 ${className}`}
           style={
             {
               '--r': `${radius}px`,
@@ -164,7 +164,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 key={i}
                 href={c.url}
                 onMouseMove={handleCardMove}
-                className="group relative flex flex-col w-full sm:w-[300px] rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300"
+                className="group relative flex flex-col w-full h-full rounded-[20px] overflow-hidden border-2 border-transparent transition-colors duration-300"
                 style={{
                   '--card-border': c.borderColor || 'transparent',
                   background: c.gradient,
@@ -178,12 +178,12 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                         'radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)'
                   }}
               />
-              <div className="relative z-10 flex-1 p-[10px] box-border">
-                <img src={c.image} alt={c.title} loading="lazy" className="w-full h-full object-cover rounded-[10px]" />
+              <div className="relative z-10 p-[10px] box-border">
+                <img src={c.image} alt={c.title} loading="lazy" className="w-full aspect-[16/10] object-cover object-top rounded-[10px]" />
               </div>
-              <footer className="relative z-10 p-3 text-white font-sans grid grid-cols-[1fr_auto] gap-x-3 gap-y-1">
+              <footer className="relative z-10 flex-1 p-3 pt-1 text-white font-sans flex flex-col gap-1">
                 <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
-                {c.handle && <span className="text-[0.95rem] opacity-80 text-right">{c.handle}</span>}
+                {c.handle && <span className="text-[0.9rem] opacity-80">{c.handle}</span>}
                 <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
                 {c.location && <span className="text-[0.85rem] opacity-85 text-right">{c.location}</span>}
               </footer>

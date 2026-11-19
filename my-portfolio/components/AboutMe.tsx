@@ -15,13 +15,13 @@ export default function AboutMe() {
                 />
             </div>
 
-            <p className="max-w-6xl mx-auto flex flex-col items-center opacity-80 bold text-xl sm:text-3xl lg:text-5xl px-4 sm:px-8">
-                I am a Junior Computer Science major at Georgia Tech<br/>
-                This website is my portfolio to showcase all my academic and personal projects.<br/>
-                Most of my projects consist of full-stack or back-end development done by me.<br/>
-                I am proficient with frameworks like Django and React and programming languages like Java, Python, C++. <br/>
-                You can find out more about my projects and my contact details from the menu. <br/>
-            </p>
+            <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-4 text-base sm:text-lg lg:text-xl leading-relaxed opacity-85">
+                <p>I&apos;m a senior at Georgia Tech studying Computer Science, with concentrations in Intelligence and Modeling &amp; Simulation. I graduate in December 2027.</p>
+                <p>Right now I&apos;m an AI Engineer Intern at Vanguard in Charlotte, building AI tools for their developers. Before that I spent the summer at ResMed shipping RAG and agentic AI features, and I did swarm robotics research with the Robot Collective at Tech.</p>
+                <p>Most of what I build lands somewhere between machine learning and full-stack work. A lot of my projects start with a model and end with an app built around it.</p>
+                <p>I mostly write Python, Java and C++, and I usually reach for FastAPI, Django, Spring Boot or React when I&apos;m putting something together.</p>
+                <p>This site is where I keep my school and personal projects. Open the menu to see them, my experience, or how to get in touch.</p>
+            </div>
 
         </section>
     );

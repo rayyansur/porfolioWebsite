@@ -6,6 +6,7 @@ import StaggeredMenu from '../components/StaggeredMenu';
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
   { label: 'Project', ariaLabel: 'Browse my projects', link: '/projects'},
+  { label: 'Experience', ariaLabel: 'See where I have worked', link: '/experience'},
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
 ];
 
